@@ -1,4 +1,4 @@
-
+This is the schema.sql
 -- Note that the SQLite3 dump isn't quite right for PostgreSQL.
 -- 1. "number" needs to be "integer" or "float".
 -- 2. "date" needs to be "date".
