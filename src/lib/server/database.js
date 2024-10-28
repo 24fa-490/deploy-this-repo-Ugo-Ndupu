@@ -11,8 +11,19 @@ export default sql;
 import os
 import psycopg2
 
-# Access the Supabase connection string from environment variables
-DATABASE_URL = os.getenv("DATABASE_URL")
+// src/lib/server/database.js
 
-# Connect to the database
-conn = psycopg2.connect(DATABASE_URL)
+// Access the Supabase connection string from environment variables
+const DATABASE_URL = process.env.DATABASE_URL;
+
+// Connect to the database
+// Use your preferred database client, e.g., pg for PostgreSQL
+const { Client } = require('pg');
+
+const client = new Client({
+  connectionString: DATABASE_URL,
+});
+
+client.connect()
+  .then(() => console.log('Connected to database'))
+  .catch(err => console.error('Connection error', err.stack));
