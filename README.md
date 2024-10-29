@@ -26,6 +26,6 @@
 
 # Where am I deployed?
 
-<[enter your URL here](https://deploy-this-repo-ugo-ndupu-bqxe.vercel.app/)>
+<[enter your URL here](https://deploy-this-repo-ugo-ndupu.vercel.app/)>
 
 
